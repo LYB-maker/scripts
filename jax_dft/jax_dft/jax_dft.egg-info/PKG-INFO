@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jax-dft
+Version: 0.0.0
+Home-page: https://github.com/google-research/google-research/tree/master/jax_dft
+Author: Google LLC
+Author-email: noreply@google.com
+License: Apache 2.0
+Requires-Python: >=3.6
+Requires-Dist: absl-py>=0.10.0
+Requires-Dist: jax>=0.2.0
+Requires-Dist: jaxlib>=0.1.56
+Requires-Dist: numpy>=1.16.4
+Requires-Dist: scipy>=1.2.1
