@@ -1,0 +1,184 @@
+
+trainCfg = 
+
+  包含以下字段的 <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a>:
+
+        maxEpoch: 200
+           batch: 64
+              lr: 1.0000e-03
+              wd: 8.0000e-04
+        gradClip: 1
+     lrDropEvery: 40
+    lrDropFactor: 0.5000
+        patience: 5
+        emaDecay: 0.9950
+            ensN: 5
+
+
+trainCfg = 
+
+  包含以下字段的 <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a>:
+
+        maxEpoch: 200
+           batch: 64
+              lr: 1.0000e-03
+              wd: 8.0000e-04
+        gradClip: 1
+     lrDropEvery: 40
+    lrDropFactor: 0.5000
+        patience: 5
+        emaDecay: 0.9950
+            ensN: 5
+
+Fold 1 / 5
+Config: width=256 depth=4 drop=0.001 glu=1 lr=1.00e-03 wd=8.00e-04 batch=64 ema=0.9950 ens=5 epochs=200
+
+==== Fold 1/5 | member 1/5 | Network dump (only once) ====
+---- Layers: 52 ----
+  1 | in                           | nnet.cnn.layer.FeatureInputLayer
+  2 | stem_fc                      | nnet.cnn.layer.FullyConnectedLayer
+  3 | stem_ln                      | nnet.cnn.layer.LayerNormalizationLayer
+  4 | stem_sw                      | nnet.cnn.layer.SwishLayer
+  5 | stem_dp                      | nnet.cnn.layer.DropoutLayer
+  6 | b1_fc1                       | nnet.cnn.layer.FullyConnectedLayer
+  7 | b1_ln1                       | nnet.cnn.layer.LayerNormalizationLayer
+  8 | b1_sw1                       | nnet.cnn.layer.SwishLayer
+  9 | b1_dp1                       | nnet.cnn.layer.DropoutLayer
+ 10 | b1_glu                       | nnet.cnn.layer.FunctionLayer
+ 11 | b1_fc2                       | nnet.cnn.layer.FullyConnectedLayer
+ 12 | b1_ln2                       | nnet.cnn.layer.LayerNormalizationLayer
+ 13 | b1_add                       | nnet.cnn.layer.AdditionLayer
+ 14 | b1_sw2                       | nnet.cnn.layer.SwishLayer
+ 15 | b1_dp2                       | nnet.cnn.layer.DropoutLayer
+ 16 | b2_fc1                       | nnet.cnn.layer.FullyConnectedLayer
+ 17 | b2_ln1                       | nnet.cnn.layer.LayerNormalizationLayer
+ 18 | b2_sw1                       | nnet.cnn.layer.SwishLayer
+ 19 | b2_dp1                       | nnet.cnn.layer.DropoutLayer
+ 20 | b2_glu                       | nnet.cnn.layer.FunctionLayer
+ 21 | b2_fc2                       | nnet.cnn.layer.FullyConnectedLayer
+ 22 | b2_ln2                       | nnet.cnn.layer.LayerNormalizationLayer
+ 23 | b2_add                       | nnet.cnn.layer.AdditionLayer
+ 24 | b2_sw2                       | nnet.cnn.layer.SwishLayer
+ 25 | b2_dp2                       | nnet.cnn.layer.DropoutLayer
+ 26 | b3_fc1                       | nnet.cnn.layer.FullyConnectedLayer
+ 27 | b3_ln1                       | nnet.cnn.layer.LayerNormalizationLayer
+ 28 | b3_sw1                       | nnet.cnn.layer.SwishLayer
+ 29 | b3_dp1                       | nnet.cnn.layer.DropoutLayer
+ 30 | b3_glu                       | nnet.cnn.layer.FunctionLayer
+ 31 | b3_fc2                       | nnet.cnn.layer.FullyConnectedLayer
+ 32 | b3_ln2                       | nnet.cnn.layer.LayerNormalizationLayer
+ 33 | b3_add                       | nnet.cnn.layer.AdditionLayer
+ 34 | b3_sw2                       | nnet.cnn.layer.SwishLayer
+ 35 | b3_dp2                       | nnet.cnn.layer.DropoutLayer
+ 36 | b4_fc1                       | nnet.cnn.layer.FullyConnectedLayer
+ 37 | b4_ln1                       | nnet.cnn.layer.LayerNormalizationLayer
+ 38 | b4_sw1                       | nnet.cnn.layer.SwishLayer
+ 39 | b4_dp1                       | nnet.cnn.layer.DropoutLayer
+ 40 | b4_glu                       | nnet.cnn.layer.FunctionLayer
+ 41 | b4_fc2                       | nnet.cnn.layer.FullyConnectedLayer
+ 42 | b4_ln2                       | nnet.cnn.layer.LayerNormalizationLayer
+ 43 | b4_add                       | nnet.cnn.layer.AdditionLayer
+ 44 | b4_sw2                       | nnet.cnn.layer.SwishLayer
+ 45 | b4_dp2                       | nnet.cnn.layer.DropoutLayer
+ 46 | tail_fc1                     | nnet.cnn.layer.FullyConnectedLayer
+ 47 | tail_ln1                     | nnet.cnn.layer.LayerNormalizationLayer
+ 48 | tail_sw1                     | nnet.cnn.layer.SwishLayer
+ 49 | tail_dp1                     | nnet.cnn.layer.DropoutLayer
+ 50 | tail_fc2                     | nnet.cnn.layer.FullyConnectedLayer
+ 51 | tail_sw2                     | nnet.cnn.layer.SwishLayer
+ 52 | out_fc                       | nnet.cnn.layer.FullyConnectedLayer
+---- Learnables: 44 ----
+  1 | stem_fc                  | Weights            | size=[256 8] | numel=2048
+  2 | stem_fc                  | Bias               | size=[256 1] | numel=256
+  3 | stem_ln                  | Offset             | size=[256 1] | numel=256
+  4 | stem_ln                  | Scale              | size=[256 1] | numel=256
+  5 | b1_fc1                   | Weights            | size=[512 256] | numel=131072
+  6 | b1_fc1                   | Bias               | size=[512 1] | numel=512
+  7 | b1_ln1                   | Offset             | size=[512 1] | numel=512
+  8 | b1_ln1                   | Scale              | size=[512 1] | numel=512
+  9 | b1_fc2                   | Weights            | size=[256 256] | numel=65536
+ 10 | b1_fc2                   | Bias               | size=[256 1] | numel=256
+ 11 | b1_ln2                   | Offset             | size=[256 1] | numel=256
+ 12 | b1_ln2                   | Scale              | size=[256 1] | numel=256
+ 13 | b2_fc1                   | Weights            | size=[512 256] | numel=131072
+ 14 | b2_fc1                   | Bias               | size=[512 1] | numel=512
+ 15 | b2_ln1                   | Offset             | size=[512 1] | numel=512
+ 16 | b2_ln1                   | Scale              | size=[512 1] | numel=512
+ 17 | b2_fc2                   | Weights            | size=[256 256] | numel=65536
+ 18 | b2_fc2                   | Bias               | size=[256 1] | numel=256
+ 19 | b2_ln2                   | Offset             | size=[256 1] | numel=256
+ 20 | b2_ln2                   | Scale              | size=[256 1] | numel=256
+ 21 | b3_fc1                   | Weights            | size=[512 256] | numel=131072
+ 22 | b3_fc1                   | Bias               | size=[512 1] | numel=512
+ 23 | b3_ln1                   | Offset             | size=[512 1] | numel=512
+ 24 | b3_ln1                   | Scale              | size=[512 1] | numel=512
+ 25 | b3_fc2                   | Weights            | size=[256 256] | numel=65536
+ 26 | b3_fc2                   | Bias               | size=[256 1] | numel=256
+ 27 | b3_ln2                   | Offset             | size=[256 1] | numel=256
+ 28 | b3_ln2                   | Scale              | size=[256 1] | numel=256
+ 29 | b4_fc1                   | Weights            | size=[512 256] | numel=131072
+ 30 | b4_fc1                   | Bias               | size=[512 1] | numel=512
+ 31 | b4_ln1                   | Offset             | size=[512 1] | numel=512
+ 32 | b4_ln1                   | Scale              | size=[512 1] | numel=512
+ 33 | b4_fc2                   | Weights            | size=[256 256] | numel=65536
+ 34 | b4_fc2                   | Bias               | size=[256 1] | numel=256
+ 35 | b4_ln2                   | Offset             | size=[256 1] | numel=256
+ 36 | b4_ln2                   | Scale              | size=[256 1] | numel=256
+ 37 | tail_fc1                 | Weights            | size=[64 256] | numel=16384
+ 38 | tail_fc1                 | Bias               | size=[64 1] | numel=64
+ 39 | tail_ln1                 | Offset             | size=[64 1] | numel=64
+ 40 | tail_ln1                 | Scale              | size=[64 1] | numel=64
+ 41 | tail_fc2                 | Weights            | size=[32 64] | numel=2048
+ 42 | tail_fc2                 | Bias               | size=[32 1] | numel=32
+ 43 | out_fc                   | Weights            | size=[1 32] | numel=32
+ 44 | out_fc                   | Bias               | size=[1 1] | numel=1
+Total learnable parameters: 817153
+==== End network dump ====
+
+<a href="matlab: opentoline('D:\matlab\MATLAB R2024b\Crack\toolbox\nnet\deep\deep\+deep\+internal\+format\FormattedData.m',49,1)">49  </a>        end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Fold 1 ensN 1 bestEpoch=97 bestValLoss=0.233828
+Fold 1 ensN 2 bestEpoch=120 bestValLoss=0.283992
+Fold 1 ensN 3 bestEpoch=115 bestValLoss=0.265990
+Fold 1 ensN 4 bestEpoch=158 bestValLoss=0.247624
+Fold 1 ensN 5 bestEpoch=42 bestValLoss=0.341471
+Fold 1 metrics: Train R2 0.8735 MAE 0.3302 RMSE 0.5765 | Val R2 0.7459 MAE 0.5062 RMSE 0.7844 | Test R2 0.6952 MAE 0.5148 RMSE 0.8987
+Fold 2 / 5
+Config: width=256 depth=4 drop=0.001 glu=1 lr=1.00e-03 wd=8.00e-04 batch=64 ema=0.9950 ens=5 epochs=200
+Fold 2 ensN 1 bestEpoch=99 bestValLoss=0.318896
+Fold 2 ensN 2 bestEpoch=109 bestValLoss=0.323839
+Fold 2 ensN 3 bestEpoch=118 bestValLoss=0.287948
+Fold 2 ensN 4 bestEpoch=81 bestValLoss=0.332790
+Fold 2 ensN 5 bestEpoch=64 bestValLoss=0.331264
+Fold 2 metrics: Train R2 0.8242 MAE 0.3752 RMSE 0.6675 | Val R2 0.7270 MAE 0.4637 RMSE 0.8498 | Test R2 0.8177 MAE 0.4997 RMSE 0.7106
+Fold 3 / 5
+Config: width=256 depth=4 drop=0.001 glu=1 lr=1.00e-03 wd=8.00e-04 batch=64 ema=0.9950 ens=5 epochs=200
+Fold 3 ensN 1 bestEpoch=50 bestValLoss=0.411827
+Fold 3 ensN 2 bestEpoch=82 bestValLoss=0.372619
+Fold 3 ensN 3 bestEpoch=92 bestValLoss=0.369058
+Fold 3 ensN 4 bestEpoch=95 bestValLoss=0.327919
+Fold 3 ensN 5 bestEpoch=100 bestValLoss=0.397629
+Fold 3 metrics: Train R2 0.8626 MAE 0.3587 RMSE 0.5897 | Val R2 0.7071 MAE 0.5218 RMSE 0.9159 | Test R2 0.6042 MAE 0.5366 RMSE 1.0165
+Fold 4 / 5
+Config: width=256 depth=4 drop=0.001 glu=1 lr=1.00e-03 wd=8.00e-04 batch=64 ema=0.9950 ens=5 epochs=200
+Fold 4 ensN 1 bestEpoch=103 bestValLoss=0.297150
+Fold 4 ensN 2 bestEpoch=61 bestValLoss=0.373207
+Fold 4 ensN 3 bestEpoch=83 bestValLoss=0.330166
+Fold 4 ensN 4 bestEpoch=89 bestValLoss=0.300886
+Fold 4 ensN 5 bestEpoch=44 bestValLoss=0.372722
+Fold 4 metrics: Train R2 0.8577 MAE 0.3671 RMSE 0.6149 | Val R2 0.6843 MAE 0.5025 RMSE 0.8949 | Test R2 0.7068 MAE 0.5038 RMSE 0.8465
+Fold 5 / 5
+Config: width=256 depth=4 drop=0.001 glu=1 lr=1.00e-03 wd=8.00e-04 batch=64 ema=0.9950 ens=5 epochs=200
+Fold 5 ensN 1 bestEpoch=95 bestValLoss=0.384983
+Fold 5 ensN 2 bestEpoch=128 bestValLoss=0.383787
+Fold 5 ensN 3 bestEpoch=124 bestValLoss=0.356738
+Fold 5 ensN 4 bestEpoch=101 bestValLoss=0.380358
+Fold 5 ensN 5 bestEpoch=96 bestValLoss=0.424624
+Fold 5 metrics: Train R2 0.8618 MAE 0.3352 RMSE 0.5950 | Val R2 0.6934 MAE 0.5092 RMSE 0.9364 | Test R2 0.7911 MAE 0.4359 RMSE 0.7239
+
+===== 5-fold average =====
+Train: R2 = 0.8560, MAE = 0.3533, RMSE = 0.6087
+Val  : R2 = 0.7115, MAE = 0.5007, RMSE = 0.8763
+Test : R2 = 0.7230, MAE = 0.4982, RMSE = 0.8392
+
+Total runtime: 45798.95 seconds (763.32 minutes)
