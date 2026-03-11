@@ -870,9 +870,9 @@ plt.close()
 [file content end]
 ```
 
-![output-14](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-14.png)
+![output-14](./pic/output-14.png)
 
-![output-15](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-15.png)
+![output-15](./pic/output-15.png)
 
 
 
