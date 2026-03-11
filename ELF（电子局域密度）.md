@@ -10,11 +10,11 @@
 
 3.作图：将得到的**ELFCAR**的文件放入Vesta中
 
-![image-20250915161814195](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20250915161814195.png)
+![image-20250915161814195](../pic/image-20250915161814195.png)
 
 点击Slice
 
-![image-20250915161935276](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20250915161935276.png)
+![image-20250915161935276](../pic/image-20250915161935276.png)
 
 hkl决定切面 d决定切面位置
 
