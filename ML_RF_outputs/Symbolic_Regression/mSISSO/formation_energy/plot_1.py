@@ -1,0 +1,52 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+data_path_train = "C:/Users/123/Desktop/outputs/Symbolic_Regression/mSISSO_Matlab/formation_energy/parity_train.dat"
+data_path_test = "C:/Users/123/Desktop/outputs/Symbolic_Regression/mSISSO_Matlab/formation_energy/parity_test.dat"
+
+data_train = np.genfromtxt(data_path_train, comments='#', dtype=float)
+train_true, train_pred = data_train[:, 0], data_train[:, 1]
+
+data_test = np.genfromtxt(data_path_test, comments='#', dtype=float)
+test_true, test_pred = data_test[:, 0], data_test[:, 1]
+
+plt.figure(figsize=(3, 4), dpi=300)
+
+colors = ['#1f78b4', '#ff7f00']
+labels = ['Training set', 'Test set']
+
+plt.scatter(train_true, train_pred, color=colors[0], label=labels[0], s=2, alpha=0.6)
+plt.scatter(test_true, test_pred, color=colors[1], label=labels[1], s=2, alpha=0.6)
+
+lim_min = -4
+lim_max = 0
+plt.plot([lim_min, lim_max], [lim_min, lim_max], 'k-', linewidth=0.5, alpha=1.0)
+
+plt.xlabel('True', fontsize=9, labelpad=3)
+plt.ylabel('Predicted', fontsize=9, labelpad=3)
+plt.xlim(lim_min, lim_max)
+plt.ylim(lim_min, lim_max)
+
+ax = plt.gca()
+ax.tick_params(axis='both',which='major',direction='in')
+ax.tick_params(axis='both',which='minor',direction='in')
+
+
+plt.xticks(np.arange(-4.0, 0.01, 0.5), fontsize=8)
+plt.yticks(np.arange(-4.0, 0.01, 0.5), fontsize=8)
+plt.grid(True, which='major', linestyle='-',linewidth=0.2,alpha=0.2)
+plt.grid(True, which='minor', linestyle='-',linewidth=0.2,alpha=0.1)
+plt.minorticks_on()
+plt.legend(loc='lower right', fontsize=6, framealpha=0)
+plt.text(
+    x=-3.8,       
+    y=-0.2,
+    s='mSISSO', 
+    fontsize=8, 
+    # fontweight='bold', 
+    ha='left', 
+    va='top', 
+    color='black'
+    )
+plt.tight_layout()
+plt.show()
