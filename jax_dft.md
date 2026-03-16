@@ -522,7 +522,7 @@ density_mse_converge_tolerance = -1.  # Convergence threshold (-1 disables)
 stop_gradient_step = -1  # Disable gradient stopping
 ```
 
-![ks_1_column](C:\Users\123\Desktop\jax_dft\jax_dft\ks_1_column.png)
+![ks_1_column](./pic/ks_1_column.png)
 
 ```python
 # Kohn-Sham calculation core
