@@ -82,13 +82,13 @@ IMAGES=3
 
 4、nebef.pl（后三列： [最大原子受力]、 [能量]、 [相对初态的能量]）
 
-![image-20250922153018841](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20250922153018841.png)
+![image-20250922153018841](./pic/image-20250922153018841.png)
 
 （当所有插点的最大原子受力（**第二列**）都<|EDIFFG|时，计算收敛。若中间插了多个点，则所有点都要<|EDIFFG|才能收敛。）
 
 nebbarrier.pl，生成neb.dat用于作图
 
-![image-20250922153035454](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20250922153035454.png)
+![image-20250922153035454](./pic/image-20250922153035454.png)
 
 nebresults.pl （注释57到71行，否则会将OUTCAR打包）
 
