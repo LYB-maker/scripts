@@ -159,7 +159,7 @@ show_density_potential(
 
 total energy: 0.6339977312405621
 
-![output-2](./pic/put-2.png)
+![output-2](./pic/output-2.png)
 
 Add a perturbation to the potential, and it becomes evident that the electron density is no longer the original density. Next, adjust the potential based on the loss function:
 $$
