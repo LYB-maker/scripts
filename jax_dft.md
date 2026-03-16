@@ -159,7 +159,7 @@ show_density_potential(
 
 total energy: 0.6339977312405621
 
-![output-2](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-2.png)
+![output-2](./pic/put-2.png)
 
 Add a perturbation to the potential, and it becomes evident that the electron density is no longer the original density. Next, adjust the potential based on the loss function:
 $$
@@ -223,7 +223,7 @@ plt.ylabel(r'$\frac{\partial L_n}{\partial v}$')
 plt.show()
 ```
 
-![output-3](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-3.png)
+![output-3](./pic/output-3.png)
 
 Now we have the gradient. Let's update the potential from the graident of loss with respect to the potential.
 
@@ -268,7 +268,7 @@ plt.ylabel(r'$L$')
 plt.show()
 ```
 
-![output-4](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-4.png)
+![output-4](./pic/output-4.png)
 
 ```python
 # Plot the electron density and potential energy at each optimization step
@@ -294,7 +294,7 @@ axs[1][0].set_ylabel(r'$v(x)$')
 plt.show()
 ```
 
-![output-5](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-5.png)
+![output-5](./pic/output-5.png)
 
 
 
@@ -320,7 +320,7 @@ plt.show()
 
 total energy: 0.4999996749447668
 
-![output-6](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-6.png)
+![output-6](./pic/output-6.png)
 
 ```python
 # Plot comparative electron density and potential energy profiles before and after optimization
@@ -331,7 +331,7 @@ show_density_potential(
     grids, optimized_density, optimized_potential, axs=axs)
 ```
 
-![output-7](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-7.png)
+![output-7](./pic/output-7.png)
 
 
 
@@ -410,7 +410,7 @@ plt.show()
 
 total energy: -2.650539439312981
 
-![output-8](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-8.png)
+![output-8](./pic/output-8.png)
 
 The **solve_non_interacting_system.py** script was enhanced by incorporating command-line argument handling and utilizing the absl library for logging, building upon the existing foundation.
 
@@ -638,7 +638,7 @@ plt.show()
 plt.close()
 ```
 
-![output-9](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-9.png)
+![output-9](./pic/output-9.png)
 
 #### **Visualize the model prediction on H$_2$ over training**
 
@@ -743,7 +743,7 @@ plt.show()
 plt.close()
 ```
 
-![output-10](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-10.png)
+![output-10](./pic/output-10.png)
 
 #### Visualize the optimal checkpoint in paper
 
@@ -767,7 +767,7 @@ plt.legend(loc=0)
 plt.show()
 ```
 
-![output-11](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-11.png)
+![output-11](./pic/output-11.png)
 
 ```python
 # Detailed analysis for specific distance
@@ -820,9 +820,9 @@ plt.show()
 plt.close()
 ```
 
-![output-12](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-12.png)
+![output-12](./pic/output-12.png)
 
-![output-13](C:\Users\123\Desktop\jax_dft\jax_dft\output\output-13.png)
+![output-13](./pic/output-13.png)
 
 ### Local density approximation (LDA)
 
