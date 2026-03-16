@@ -24,12 +24,12 @@ va—71—711（块体材料）—1 （选eV为能量单位）
 
 1. 将SL3ME.py、am1.5G.dat传至op文件夹下，修改88和89行的直接带隙与间接带隙值及90行的文件名称。带隙值同样选取hse06泛函计算结果，当材料为直接带隙半导体时，material_direct_allowed_gap = material_indirect_gap。
 
-![image-20260316094550205](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20260316094550205.png)
+![image-20260316094550205](../pic/image-20260316094550205.png)
 
 2. ```python
    python SL3ME.py
    ```
 
-   ![image-20260316094707594](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20260316094707594.png)
+   ![image-20260316094707594](../pic/image-20260316094707594.png)
 
-![image-20260316094717463](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20260316094717463.png)
+![image-20260316094717463](../pic/image-20260316094717463.png)
