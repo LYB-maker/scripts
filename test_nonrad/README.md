@@ -208,7 +208,7 @@ scaling = 0.917431192661
 
 4、两个平台区域：C_N缺陷有明显局域 p 态，同时又耦合价带尾态；有限尺寸周期镜像开始影响波函数，α 会重新变化。
 
-<img src="C:\Users\123\Desktop\test_nonrad\fig\GaN_C_N_charged_supercell_scaling_CBM.png" alt="GaN_C_N_charged_supercell_scaling_CBM" style="zoom:10%;" />
+<img src=".\fig\GaN_C_N_charged_supercell_scaling_CBM.png" alt="GaN_C_N_charged_supercell_scaling_CBM" style="zoom:10%;" />
 
 ```python
 scaling = 1.4492753623188408
