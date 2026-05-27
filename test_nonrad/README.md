@@ -171,7 +171,7 @@ Sommerfeld Parameter @ 300K: 7.77969
 
 3、300K时热运动不足以摆脱引力束缚，不可以忽略库仑吸引势。该缺陷是一个高效的“复合中心“，会严重降低器件效率。
 
-<img src="C:\Users\123\Desktop\test_nonrad\fig\GaN_C_N_sommerfeld_vs_T.png" alt="GaN_C_N_sommerfeld_vs_T" style="zoom:10%;" />
+<img src=".\fig\GaN_C_N_sommerfeld_vs_T.png" alt="GaN_C_N_sommerfeld_vs_T" style="zoom:10%;" />
 
 ###### **S (T)分析**：
 
