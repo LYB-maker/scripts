@@ -28,7 +28,7 @@ $$
 
 ### 4、非辐射俘获系数计算
 
-![image-20260527205706657](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20260527205706657.png)
+![image-20260527205706657](test_nonrad/fig/image-20260527205706657.png)
 
 ## 三、例子：GaN
 
