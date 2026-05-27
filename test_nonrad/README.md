@@ -49,7 +49,7 @@ $$
 dE=1.058 eV
 ```
 
-<img src="C:\Users\123\Desktop\test_nonrad\fig\image-20260525170948896.png" alt="image-20260525170948896" style="zoom: 50%;" />
+<img src=".\test_nonrad\fig\image-20260525170948896.png" alt="image-20260525170948896" style="zoom: 50%;" />
 
 #### 2、ccd计算
 
