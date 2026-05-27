@@ -192,7 +192,7 @@ factor = charged_supercell_scaling(wavecar_path, 189, def_index=192, fig=fig)#19
 print('scaling =', 1 / factor)
 ```
 
-<img src="C:\Users\123\Desktop\test_nonrad\fig\GaN_C_N_charged_supercell_scaling_VBM.png" alt="GaN_C_N_charged_supercell_scaling_VBM" style="zoom:10%;" />
+<img src=".\fig\GaN_C_N_charged_supercell_scaling_VBM.png" alt="GaN_C_N_charged_supercell_scaling_VBM" style="zoom:10%;" />
 
 ```python
 scaling = 0.917431192661
@@ -235,9 +235,9 @@ volume
 g=4 #构型简并度。对于碳原子取代，空穴可以被捕获到4种相同的缺陷构型中(每个键上各一种)
 ```
 
-<img src="C:\Users\123\Desktop\test_nonrad\fig\Cp_T.png" alt="Cp_T" style="zoom:10%;" />
+<img src=".\fig\Cp_T.png" alt="Cp_T" style="zoom:10%;" />
 
-<img src="C:\Users\123\Desktop\test_nonrad\fig\sigma_T.png" alt="sigma_T" style="zoom:10%;" />
+<img src=".\fig\sigma_T.png" alt="sigma_T" style="zoom:10%;" />
 
 ```python
 Temperature : 299.62 K
