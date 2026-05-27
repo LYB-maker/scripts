@@ -49,7 +49,7 @@ $$
 dE=1.058 eV
 ```
 
-<img src=".\test_nonrad\fig\image-20260525170948896.png" alt="image-20260525170948896" style="zoom: 50%;" />
+![image-20260525170948896](./fig/image-20260525170948896.png)
 
 #### 2、ccd计算
 
@@ -67,7 +67,7 @@ dE=1.058 eV
    }
    ```
 
-<img src=".\fig\test_nonrad\fig\image-20260525171743600.png" alt="image-20260525171743600" style="zoom:50%;" />
+![image-20260525171743600](./fig/image-20260525171743600.png)
 
 #### 3、计算电子-声子耦合矩阵元，
 
@@ -83,7 +83,7 @@ Wifs = get_Wif_from_WSWQ(WSWQs, str(gpythonround_files / 'vasprun.xml'), 192, [1
 
 基态电荷数383，`ISPIN = 2`表示开启自旋，`NUPDOWN = 1`代表磁矩为1，则spin up的电子数（192）比spin down（191）的多一个，说明192为单电子占据缺陷态，spin down为空缺陷态。价带上电子容易跳的空缺陷态上被俘获，因此`spin=1`。GaN的VBM主要N-2p轨道做主要贡献，于是选择3条简并轨道共同反映VBM(189、190、191)。
 
-<img src="C:\Users\123\Desktop\test_nonrad\fig\image-20260527115405303.png" alt="image-20260527115405303" style="zoom: 50%;" />
+![image-20260527115405303](./fig/image-20260527115405303.png)
 
 ```python
  spin component 1
@@ -103,12 +103,10 @@ Wifs = get_Wif_from_WSWQ(WSWQs, str(gpythonround_files / 'vasprun.xml'), 192, [1
     192       3.4944      0.00000
     193       6.5026      0.00000
 ```
-
-![image-20260526200939042](C:\Users\123\Desktop\test_nonrad\fig\image-20260526200939042.png)
-
+![image-20260526200939042](./fig/image-20260526200939042.png)
 
 
-![image-20260526200956130](C:\Users\123\Desktop\test_nonrad\fig\image-20260526200956130.png)
+![image-20260526200956130](./fig/image-20260526200956130.png)
 
 
 
