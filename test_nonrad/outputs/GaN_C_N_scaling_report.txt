@@ -1,0 +1,18 @@
+===== nonrad scaling corrections report =====
+case_root = /home/student/works/lyb/test_files/nonrad_test_1
+
+===== Sommerfeld factor =====
+Z = -1
+m_eff = 0.18
+eps_static = 8.9
+Sommerfeld factor @ 300.0 K = 7.78145705
+
+===== Charged-supercell scaling =====
+WAVECAR = /home/student/works/lyb/test_files/nonrad_test_1/relax/excited_dir/WAVECAR
+band_index = 193
+def_index = 192
+spin = 1
+
+raw_factor = 0.700000000000
+recommended_scaling = 1.428571428571
+

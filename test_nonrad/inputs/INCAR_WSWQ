@@ -1,0 +1,33 @@
+ISTART = 1
+ICHARG = 11
+
+PREC = Normal
+ALGO = None
+NELMIN = 5
+ENCUT = 400
+EDIFF = 1E-5
+
+ISPIN = 2
+NUPDOWN = 1
+NELECT = 383
+
+IBRION = -1
+NSW = 0
+ISYM = -1
+
+ISMEAR = 0
+SIGMA = 0.04
+LREAL = .FALSE.
+
+LHFCALC = .TRUE.
+HFSCREEN = 0.2
+AEXX = 0.31
+PRECFOCK = Normal
+
+LWAVE = .TRUE.
+LWSWQ = .TRUE.
+LCHARG = .FALSE.
+
+#vasp5.44
+NPAR = 1      # 强行关闭能带并行，所有核处理相同的能带组
+KPAR = 1      # 强行关闭K点并行 ，此外job设置核为1
