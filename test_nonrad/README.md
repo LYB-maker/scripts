@@ -67,7 +67,7 @@ dE=1.058 eV
    }
    ```
 
-<img src="C:\Users\123\Desktop\test_nonrad\fig\image-20260525171743600.png" alt="image-20260525171743600" style="zoom:50%;" />
+<img src=".\fig\test_nonrad\fig\image-20260525171743600.png" alt="image-20260525171743600" style="zoom:50%;" />
 
 #### 3、计算电子-声子耦合矩阵元，
 
