@@ -188,7 +188,7 @@ Sommerfeld Parameter @ 300K: 7.77969
 比例系数的计算方法是将电荷密度的径向分布与纯粹的均匀分布进行比较。
 
 ```python
-factor = charged_supercell_scaling(wavecar_path, 189, def_index=192, fig=fig)#190、191不存在平台值
+factor = charged_supercell_scaling(wavecar_path, 189, def_index=192, fig=fig)#VBM 190、191不存在平台值
 print('scaling =', 1 / factor)
 ```
 
@@ -207,6 +207,10 @@ scaling = 0.917431192661
 3、右图是缩放系数的导数，它提供了一种寻找平台点的算法方法；横线之下对应的横坐标代表是平台。
 
 4、两个平台区域：C_N缺陷有明显局域 p 态，同时又耦合价带尾态；有限尺寸周期镜像开始影响波函数，α 会重新变化。
+```python
+factor = charged_supercell_scaling(wavecar_path, 189, def_index=193, fig=fig)#CBM
+print('scaling =', 1 / factor)
+```
 
 <img src=".\fig\GaN_C_N_charged_supercell_scaling_CBM.png" alt="GaN_C_N_charged_supercell_scaling_CBM" style="zoom:10%;" />
 
@@ -218,7 +222,7 @@ scaling = 1.4492753623188408
 
 1、左图：拟合良好，但较VBM偏差较大
 
-2、α≈0.7，说明缺陷附近有一定局域化减弱，因此俘获系数需要乘以11.4492753623188408的校正。
+2、α≈0.7，说明缺陷附近有一定局域化减弱，因此俘获系数需要乘以1.4492753623188408的校正。
 
 3、1.7-2.5区域存在平台值。
 
